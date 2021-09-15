@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIMER</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="clock">
+      <div id="hour" class="hour"></div>
+      <div class="dot">:</div>
+      <div id="minute" class="minute"></div>
+      <div class="dot">:</div>
+      <div id="second" class="second"></div>
+    </div>
+  </body>
+  <script>
+    var hour = document.getElementById("hour");
+    var minute = document.getElementById("minute");
+    var second = document.getElementById("second");
+
+    setInterval(myTime, 1000);
+    function myTime() {
+      var d = new Date();
+      hour.innerHTML = d.getHours();
+      minute.innerHTML = d.getMinutes();
+      second.innerHTML = d.getSeconds();
+    }
+  </script>
+</html>

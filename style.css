@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "clock-font";
+  src: url("font/digital.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "clock-font";
+  overflow: hidden;
+}
+.clock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  flex-direction: row;
+  text-align: center;
+  background-color: #636e72;
+  justify-content: center;
+}
+.hour {
+  display: flex;
+  font-size: 150px;
+  border: 2px solid #2d3436;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #2d3436;
+  color: white;
+}
+.minute {
+  display: flex;
+  font-size: 150px;
+  border: 2px solid #2d3436;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #2d3436;
+  color: white;
+}
+.second {
+  display: flex;
+  font-size: 150px;
+  background-color: #2d3436;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.dot {
+  font-size: 150px;
+  color: #8395a7;
+}
